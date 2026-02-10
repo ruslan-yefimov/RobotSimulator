@@ -6,6 +6,5 @@ public class ConsoleReportOutputHandler : IReportOutputHandler
 {
     public void Handle(string output)
     {
-        throw new NotImplementedException();
     }
 }

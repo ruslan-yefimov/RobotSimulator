@@ -6,6 +6,5 @@ public class LeftCommand : ICommand
 {
     public void Execute(IRobot robot)
     {
-        throw new NotImplementedException();
     }
 }

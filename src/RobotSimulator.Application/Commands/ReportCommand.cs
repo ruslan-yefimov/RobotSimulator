@@ -2,10 +2,10 @@ using RobotSimulator.Domain.Interfaces;
 
 namespace RobotSimulator.Application.Commands;
 
-public class ReportCommand : ICommand
+public class ReportCommand(IReportOutputHandler outputHandler) : ICommand
 {
     public void Execute(IRobot robot)
     {
-        throw new NotImplementedException();
+        outputHandler.Handle(robot.Report() ?? "");
     }
 }

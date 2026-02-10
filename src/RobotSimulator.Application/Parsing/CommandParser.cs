@@ -6,6 +6,6 @@ public class CommandParser(IReportOutputHandler reportOutputHandler) : ICommandP
 {
     public ICommand? Parse(string input)
     {
-        throw new NotImplementedException();
+        return null;
     }
 }
