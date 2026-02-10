@@ -6,6 +6,8 @@ public class ReportCommand(IReportOutputHandler outputHandler) : ICommand
 {
     public void Execute(IRobot robot)
     {
-        outputHandler.Handle(robot.Report() ?? "");
+        var result = robot.Report();
+        if (result is not null)
+            outputHandler.Handle(result);
     }
 }

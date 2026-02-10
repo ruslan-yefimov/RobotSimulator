@@ -46,6 +46,7 @@ public class CommandParserTests
     [InlineData("PLACE 1,2")]
     [InlineData("PLACE a,b,NORTH")]
     [InlineData("PLACE 1,2,UP")]
+    [InlineData("// this is a comment")]
     public void Parse_InvalidInput_ReturnsNull(string input)
     {
         _parser.Parse(input).ShouldBeNull();

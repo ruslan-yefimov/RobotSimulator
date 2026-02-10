@@ -4,7 +4,5 @@ namespace RobotSimulator.Application.Commands;
 
 public class LeftCommand : ICommand
 {
-    public void Execute(IRobot robot)
-    {
-    }
+    public void Execute(IRobot robot) => robot.TurnLeft();
 }

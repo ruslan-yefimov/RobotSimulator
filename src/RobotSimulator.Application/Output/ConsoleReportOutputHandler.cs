@@ -4,7 +4,5 @@ namespace RobotSimulator.Application.Output;
 
 public class ConsoleReportOutputHandler : IReportOutputHandler
 {
-    public void Handle(string output)
-    {
-    }
+    public void Handle(string output) => Console.WriteLine(output);
 }

@@ -6,5 +6,6 @@ public class MoveCommand : ICommand
 {
     public void Execute(IRobot robot)
     {
+        robot.Move();
     }
 }
