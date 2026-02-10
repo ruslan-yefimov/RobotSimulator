@@ -15,6 +15,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution Files", "{0EF7D9B5-7529-46C2-B53E-33698D1FEE35}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		commands.txt = commands.txt
 	EndProjectSection
 EndProject
 Global

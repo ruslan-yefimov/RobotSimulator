@@ -1,0 +1,43 @@
+// Example 1: Place, move north, report
+PLACE 0,0,NORTH
+MOVE
+REPORT
+
+// Example 2: Place, turn left, report
+PLACE 0,0,NORTH
+LEFT
+REPORT
+
+// Commands before placement are ignored
+MOVE
+LEFT
+RIGHT
+REPORT
+
+// Place and walk around
+PLACE 1,2,EAST
+MOVE
+MOVE
+LEFT
+MOVE
+REPORT
+
+// Boundary protection: can't fall off the north edge
+PLACE 4,4,NORTH
+MOVE
+MOVE
+MOVE
+REPORT
+
+// Re-placement overrides previous state
+PLACE 0,0,SOUTH
+PLACE 3,3,WEST
+REPORT
+
+// Full 360 rotation returns to original direction
+PLACE 2,2,NORTH
+RIGHT
+RIGHT
+RIGHT
+RIGHT
+REPORT
